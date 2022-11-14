@@ -1,4 +1,4 @@
-#The following are the basic datatypes you will frequently encounter
+#The following are the basic datatypes and data structures you will frequently encounter
 
 # 1) integer (int): whole numbers like 3,40,30001, etc.
 # 2) floating point (float): decimal point numbers like 3.1, 45.67, 4500.6754, etc.
