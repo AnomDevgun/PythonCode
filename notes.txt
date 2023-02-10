@@ -1,0 +1,1 @@
+shuffle in python random library is an inplace function. It returns nothing, ex: shuffle(yourList)

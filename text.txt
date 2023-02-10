@@ -4,3 +4,48 @@ This is line 3
 The end.Hello World
 Hello World
 Hello World
+
+
+
+
+LEGB RULE interpreter follows this order to search for the variable:
+    Local variable: names assigned in any way within a function (def or lambda) and not global in that function
+    Enclosing function Local: names in the local scope of any and all functions (def or lambda) from inner to outer
+    Global variables: assigned at top level of module file or global in a def within the file
+    Built in python: preassigned in the built in modules, ex: open, range, print etc.
+
+
+examples:
+
+lambda num:num**2  , here num is local to the lambda
+
+/*
+Enclosing function local example:
+
+name='Hello World'
+
+def hello():
+    name='Sammy'
+    def greet():
+        print("Hello "+name)
+    
+    greet()
+hello()
+*/
+
+
+/*
+Changing global variable inside a function
+
+#This is a global variable
+x=50
+
+def fun():
+    global x
+    print(f'The value of x is {x}')
+
+    #Changing the value of global x
+    x='Changed globally'
+    print(f'The value of x is now: {x}')
+
+*/
